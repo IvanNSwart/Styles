@@ -4,7 +4,7 @@ function App() {
 	return (
 		<body>
 			<div className="container mx-auto px-60">
-				<nav className="bg-white fixed top-0 inset-x-0 h-24">
+				<nav className="bg-white fixed top-0 inset-x-0 h-24 sm:justify-center">
 					<div className="container flex mx-auto px-60 gap-10">
 						<div className="mr-auto">
 							<a
@@ -19,48 +19,48 @@ function App() {
 							</a>
 						</div>
 
-						<div className="items-center space-x-1 flex justify-end">
+						<div className="items-center space-x-1 flex justify-end font-serif">
 							<a
 								href="#home"
-								className="py-4 px-2 text-blue-500 border-b-4 font-semibold"
+								className="py-4 px-7 text-blue-500 border-b-4 font-semibold"
 							>
 								Home
 							</a>
 							<a
 								href="#about"
-								className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
+								className="py-4 px-7 text-gray-500 font-semibold hover:text-blue-500 "
 							>
 								About
 							</a>
 							<a
 								href="#services"
-								className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
+								className="py-4 px-7 text-gray-500 font-semibold hover:text-blue-500 "
 							>
 								Services
 							</a>
 							<a
 								href=""
-								className="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300"
+								className="py-4 px-7 text-gray-500 font-semibold hover:text-blue-500 "
 							>
 								Team
 							</a>
 						</div>
 
-						<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl mt-2 mb-2 shadow-lg shadow-blue-500/50">
+						<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-7 rounded-xl mt-2 mb-2 shadow-lg shadow-blue-500/50">
 							Get Started
 						</button>
 					</div>
 				</nav>
 				<div
-					className="box-border font-bold text-5xl w-3/6 pt-10 font-serif mt-24"
+					className="box-border font-bold lg:text-5xl lg:w-3/6 pt-10 font-serif mt-28 sm:text-4xl w-6/6"
 					id="home"
 				>
 					Simplify your company systems with our
-					IT soulution
+					IT solution
 				</div>
 
 				<div
-					className="box-border flex justify-evenly mt-5 mb-20 bg-gradient-to-t from-black-500 to-slate-100"
+					className="box-border flex justify-evenly mt-20 mb-20 bg-gradient-to-t from-black-500 to-slate-100"
 					id="about"
 				>
 					<img
@@ -69,12 +69,12 @@ function App() {
 						className="h-80 w-80 mt-10 mb-10 mr-48 rounded-2xl object-cover"
 					/>
 					<div>
-						<div className="mb-10 mt-10">
+						<div className="mb-10 mt-10 font-bold">
 							<h4>
 								Project
 								Discussion
 							</h4>
-							<p>
+							<p className="text-gray-500">
 								It is a long
 								established fact
 								that the reader
@@ -84,9 +84,9 @@ function App() {
 								content.
 							</p>
 						</div>
-						<div className="mb-10 mt-10">
+						<div className="mb-10 mt-10 font-bold ">
 							Case Study
-							<p>
+							<p className="text-gray-500">
 								It is a long
 								established fact
 								that the reader
@@ -96,9 +96,9 @@ function App() {
 								content.
 							</p>
 						</div>
-						<div className="mb-10 mt-10">
+						<div className="mb-10 mt-10 font-bold">
 							Execute Project
-							<p>
+							<p className="text-gray-500">
 								It is a long
 								established fact
 								that the reader
@@ -111,7 +111,7 @@ function App() {
 					</div>
 				</div>
 				<div
-					className="box-border flex justify-center mt-20"
+					className="box-border flex justify-center mt-20 "
 					id="services"
 				>
 					<div className="font-bold text-5xl w-6/6 pt-10 font-serif">
@@ -122,18 +122,18 @@ function App() {
 						</p>
 					</div>
 				</div>
-
-				<div className="box-border mt-32 mb-10 flex justify-evenly">
-					<ServiceCard topic="Development" />
-					<ServiceCard topic="System Application" />
-					<ServiceCard topic="Network Solutions" />
+				<div>
+					<div className="box-border mt-32 mb-10 flex justify-evenly">
+						<ServiceCard topic="Development" />
+						<ServiceCard topic="System Application" />
+						<ServiceCard topic="Network Solutions" />
+					</div>
+					<div className="box-border flex justify-evenly mt-10 mb-32">
+						<ServiceCard topic="A.I" />
+						<ServiceCard topic="Web/App Development" />
+						<ServiceCard topic="IT Consulting" />
+					</div>
 				</div>
-				<div className="box-border flex justify-evenly mt-10 mb-32">
-					<ServiceCard topic="A.I" />
-					<ServiceCard topic="Web/App Development" />
-					<ServiceCard topic="IT Consulting" />
-				</div>
-
 				<div className="box-border flex justify-evenly mt-30 mb-20 mr-4">
 					<div className="w-3/6">
 						<p className="font-bold text-5xl w-6/6 pt-10 font-serif">
